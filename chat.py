@@ -12,8 +12,8 @@ def home():
 
 @socketio.on("message")
 def handle_message(msg):
-    print("Message:", msg)
+    print("Received:", msg)
     send(msg, broadcast=True)
 
 if __name__ == "__main__":
-    socketio.run(app, debug=False)
+    socketio.run(app, debug=True, port=5001)

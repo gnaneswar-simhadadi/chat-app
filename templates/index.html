@@ -16,7 +16,11 @@
 
 <input type="text" id="message" placeholder="Type message">
 
-<button onclick="sendMessage()">Send</button>
+<input type="file" id="imageInput" accept="image/*">
+
+<button onclick="sendMessage()">Send Message</button>
+
+<button onclick="sendImage()">Send Image</button>
 
 <script src="{{ url_for('static', filename='script.js') }}"></script>
 
